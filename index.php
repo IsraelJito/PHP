@@ -6,10 +6,10 @@
             <div class="cta-content d-xl-flex align-items-center justify-content-around text-center text-xl-left">
                 <div class="content" data-aos="fade-right" data-aos-delay="200">
                     <h2>Missing People</h2>
-                    <p>They are reports that protesters are missing. </p>
+                    <p>They are reports that protesters are missing. Lets help each other!.</p>
                 </div>
                 <div class="subscribe-btn" data-aos="fade-left" data-aos-delay="400" data-aos-offset="0">
-                    <a href="posts.php" class="btn btn-primary">Newsletter</a>
+                    <a href="posts.php" class="btn btn-primary">View More</a>
                 </div>
             </div>
         </div>
@@ -89,7 +89,7 @@
                         All we ask is not to be killed or maltreated by our own forces.
                     </p>
                     
-                    <a href="post.php" class="btn btn-primary">See More</a>
+                    <a href="posts.php" class="btn btn-primary">See More</a>
                 </div>
                 <div class="col-md-6" data-aos="fade-left" data-aos-delay="400" data-aos-duration="800">
                     <div class="featured-img">
@@ -160,9 +160,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="text-center">
-                <a href="#" class="btn btn-primary">See More</a>
             </div>
         </div>
     </section>
@@ -299,7 +296,7 @@
                     <p>Please lets join hands together, as one "Nigeria".</p>
                 </div>
                 <div class="subscribe-btn" data-aos="fade-left" data-aos-delay="400" data-aos-offset="0">
-                    <a href="#" class="btn btn-primary">Join As One Nigeria</a>
+                    <a href="contact.php" class="btn btn-primary">Join As One Nigeria</a>
                 </div>
             </div>
         </div>

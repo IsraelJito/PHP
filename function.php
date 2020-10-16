@@ -77,6 +77,25 @@ function createpost($request) {
 	}
 }
 
+function getpost() {
+	global $db;
+	$query = mysqli_query($db, "SELECT id, title, image, post, created_at FROM posts WHERE status = 'active' ORDER BY id DESC");
+	if (mysqli_num_rows($query) > 0) {
+		return $query;
+	}
+}
+
+function getUserposts() {
+	global $db, $user;
+	$user_id = $user['id'];
+	$query = mysqli_query($db, "SELECT * FROM posts WHERE author_id = '$user_id' ORDER BY id DESC");
+	if (mysqli_num_rows($query) != 0) {
+		return $query;
+	}
+}
+
+
+
 
 ?>
 

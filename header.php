@@ -55,7 +55,7 @@ $db = dbconnect();
                 </nav>
             </div>
             <nav class="navbar navbar-expand-md navbar-light">
-                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Multipurpose"></a>
+                <a class="navbar-brand" href="index.html"><img src="" alt="Multipurpose"></a>
                 <div class="group d-flex align-items-center">
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -67,7 +67,7 @@ $db = dbconnect();
                 <a class="search-icon d-none d-md-block" href="#"><i class="fa fa-search"></i></a>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
                         <li class="nav-item"><a class="nav-link" href="posts.php">Recent Updates</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us</a></li>
@@ -101,10 +101,7 @@ $db = dbconnect();
                                     <p data-aos="fade-right" data-aos-delay="600">Hello, i am a young Nigerian and, i would like not to be Harrased by our police.
                                         <br> chunks as necessary, making this the first.
                                     </p>
-                                    <a data-aos="fade-right" data-aos-delay="900" href="#" class="btn btn-primary">See
-                                        More</a>
-                                    <a data-aos="fade-right" data-aos-delay="900" href="#" class="btn btn-primary">Get
-                                        Now</a>
+                                    <a data-aos="fade-right" data-aos-delay="900" href="posts.php" class="btn btn-primary">News</a>
                                 </div>
                             </div>
                             <div class="swiper-slide slide-content d-flex align-items-center">
@@ -115,10 +112,7 @@ $db = dbconnect();
                                         Expecting
                                         Peoples’s predefined dummy text<br> chunks as necessary, making this the first.
                                     </p>
-                                    <a data-aos="fade-right" data-aos-delay="900" href="#" class="btn btn-primary">See
-                                        More</a>
-                                    <a data-aos="fade-right" data-aos-delay="900" href="#" class="btn btn-primary">Get
-                                        Now</a>
+                                    <a data-aos="fade-right" data-aos-delay="900" href="posts.php" class="btn btn-primary">News</a>
                                 </div>
                             </div>
                         </div>

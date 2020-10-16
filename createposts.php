@@ -14,7 +14,7 @@ if (isset($_POST['submit'])) {
 } 
 ?>
 
-<!-- <div id="preloader"></div> -->
+<div id="preloader"></div>
 
 <div class="container" style="padding: 100px 0">
 	<h4 style="text-align: center; padding: 30px 0;">Welcome User <?= $_SESSION['user']['name'] ?></h4>
@@ -46,9 +46,49 @@ if (isset($_POST['submit'])) {
 				<br><button type="submit" name="submit" style="background-color: blue; padding: 5px; border-radius: 5px;">Post</button>
 			</form>
 		</div>
+		<a href="viewpost.php"><button type="submit" name="submit" style="background-color: red; padding: 5px; float: right; border-radius: 5px;">View posts</button></a>
 		<a href="logout.php"><button type="submit" name="submit" style="background-color: red; padding: 5px; float: right; border-radius: 5px;">Logout</button></a>
 	</section>
+
+	<section>
+		<h3>My Posts</h3>
+		<table id="table">
+			<tr>
+				<th>S/N</th>
+				<th>Image</th>
+				<th>Title</th>
+				<th>Post</th>
+				<th>Status</th>
+				<th>Date Created</th>
+				<th>Action</th>
+			</tr>
+
+			<?php 
+			$posts = getUserposts();
+			$i = 1;
+			while ($post = mysqli_fetch_assoc($posts)) {
+
+				?>
+				<tr>
+					
+					<td><?= $i++?></td>
+					<td style="max-height: 200px;"><img src="assets/images/<?= $post['image']?>" style="width: 100%; height: 100%;"></td>
+					<td><?= $post['title']?></td>
+					<td><?= $post['post']?></td>
+					<td><?= $post['status']?></td>
+					<td><?= $post['created_at']?></td>
+					<td><a href="delete.php?id=<?= $post['id'] ?>" style="background: red; color: #fff; padding: 5px;">Delete!</a><br><br><a href="edit.php?id=<?= $post['id'] ?>" style="background: blue; color: #fff; padding: 5px;">Edit!</a></td>
+				</tr>
+
+				<?php
+                        // if ($i == 5) {
+                        // 	break;
+                        // }
+			} ?>
+		</table>
+	</section>
 </div>
+
 
 
 <?php require('footer.php'); ?>
