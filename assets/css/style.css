@@ -868,6 +868,22 @@ span {
   border-color: #45489a;
 }
 
+#table{
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+#table tr{
+  border-bottom: 2px solid #ccc;
+  padding: 5px;
+  border-radius: 10px;
+}
+#table th {
+  padding: 0 20px;
+}
+#table td {
+  padding: 10px;
+}
+
 #preloader {
   content: '';
   position: fixed;
