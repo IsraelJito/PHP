@@ -11,7 +11,6 @@ function dbconnect() {
 		// }
 		return $con;
 	}
-	
 }
 
 function runcheck($data) {

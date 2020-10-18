@@ -8,7 +8,7 @@
 	$posts = getpost();
 	$i = 0;
 	while ($post = mysqli_fetch_assoc($posts)) {?>
-		<div class="container postrow" style="padding: 50px 0; "id="<?= $i ?>">
+		<div class="container postrow" style="padding: 50px 0; "id="<?= $i++ ?>">
 			<div class="postcolon" style="max-height: 400px;">
 				<img src="assets/images/<?= $post['image']; ?>" alt="" style="height: 100%; width:100%; padding: 30px;">
 			</div>
@@ -20,10 +20,10 @@
 		</div>
 
 		<?php 
-		if ($i = 20) {
+		if ($i == 20) {
 			break;
 		}
-	} 
+	}
 
 	?>
 

@@ -11,7 +11,8 @@ if (isset($_POST['submit'])) {
 	if (createpost(array_merge($_POST, $_FILES))) {
 		$success = "New Post Successfully Created!";
 	}
-} 
+}
+
 ?>
 
 <div id="preloader"></div>
